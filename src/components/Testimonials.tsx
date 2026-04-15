@@ -65,7 +65,7 @@ function Testimonials({ items }: TestimonialsProps) {
             }
           }}
         >
-          <div className="w-full max-w-[760px] rounded-[14px] border border-white/8 bg-[#111111] p-5 sm:p-6">
+          <div className="h-[260px] w-full max-w-[760px] overflow-hidden rounded-[14px] border border-white/8 bg-[#111111] p-5 sm:h-[280px] sm:p-6">
             <AnimatePresence mode="wait">
               <motion.article
                 key={activeIndex}
@@ -74,6 +74,7 @@ function Testimonials({ items }: TestimonialsProps) {
                 exit={{ opacity: 0, x: -28 }}
                 transition={{ duration: 0.22 }}
                 aria-live="polite"
+                className="flex h-full flex-col"
               >
                 <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
                   <div className="flex items-center gap-3">
@@ -98,7 +99,7 @@ function Testimonials({ items }: TestimonialsProps) {
                   </div>
                 </div>
 
-                <p className="mt-5 text-[14px] leading-7 text-white/84 sm:text-[15px]">
+                <p className="mt-5 max-h-[156px] overflow-hidden text-[14px] leading-7 text-white/84 sm:max-h-[170px] sm:text-[15px]">
                   &ldquo;{activeItem.quote}&rdquo;
                 </p>
                 <p className="mt-4 text-[12px] font-semibold uppercase tracking-[0.18em] text-white/70">

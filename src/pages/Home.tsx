@@ -15,8 +15,8 @@ import process03Src from '../assets/process-03.png';
 import heroOrbitSrc from '../assets/hero-orbit.svg';
 import heroCenterFrameSrc from '../assets/hero-center-frame.svg';
 import heroFigmaFrameSrc from '../assets/hero-figma-frame.svg';
-import heroNotionFrameSrc from '../assets/hero-notion-frame.svg';
-import heroCanvaFrameSrc from '../assets/hero-canva-frame.svg';
+import heroWebflowFrameSrc from '../assets/hero-webflow-frame.svg';
+import heroPhotoshopFrameSrc from '../assets/hero-photoshop-frame.svg';
 import heroIllustratorFrameSrc from '../assets/hero-illustrator-frame.svg';
 import heroPremiereFrameSrc from '../assets/hero-premiere-frame.svg';
 import heroAfterEffectsFrameSrc from '../assets/hero-after-effects-frame.svg';
@@ -53,8 +53,8 @@ const heroTools = [
     sizeClassName: 'h-[46px] w-[46px] sm:h-[54px] sm:w-[54px] lg:h-[44px] lg:w-[44px] xl:h-[54px] xl:w-[54px]',
   },
   {
-    name: 'Canva',
-    src: heroCanvaFrameSrc,
+    name: 'Photoshop',
+    src: heroPhotoshopFrameSrc,
     angle: 198,
     orbitSize: 62,
     duration: HERO_ORBIT_DURATION,
@@ -62,8 +62,8 @@ const heroTools = [
     sizeClassName: 'h-[40px] w-[40px] sm:h-[46px] sm:w-[46px] lg:h-[38px] lg:w-[38px] xl:h-[46px] xl:w-[46px]',
   },
   {
-    name: 'Notion',
-    src: heroNotionFrameSrc,
+    name: 'Webflow',
+    src: heroWebflowFrameSrc,
     angle: 318,
     orbitSize: 62,
     duration: HERO_ORBIT_DURATION,
@@ -92,8 +92,8 @@ const services = [
     glowColor: 'orange' as const,
   },
   {
-    title: 'UI/UX',
-    description: 'Clean digital experiences built to convert clearly and move users with ease.',
+    title: 'CRO and UI/UX',
+    description: 'Conversion-first experiences that guide users, reduce friction, and lift results.',
     preview: 'uiux' as const,
     bodyClassName: 'bg-[#f8e8ef] text-black',
     previewClassName: 'bg-[linear-gradient(180deg,#a8d8ff_0%,#d8eeff_100%)]',
@@ -112,8 +112,8 @@ const services = [
     glowColor: 'green' as const,
   },
   {
-    title: 'Motion Design',
-    description: 'Motion assets that help launches feel alive without losing clarity or structure.',
+    title: 'Website Design and Development',
+    description: 'High-performing sites built to convert, load fast, and reflect your brand with precision.',
     preview: 'motion' as const,
     bodyClassName: 'bg-[#e0efff] text-black',
     previewClassName: 'bg-[linear-gradient(180deg,#acd3ff_0%,#dcecff_100%)]',
@@ -192,33 +192,50 @@ const processSteps = [
     title: 'We start delivering',
     description: 'We move fast and shape the design into launch-ready assets and interfaces.',
     imageSrc: process03Src,
+    imageClassName: 'h-auto object-contain',
   },
 ];
 
 const testimonials = [
   {
-    company: 'Elytra',
-    person: 'Joseph T., Founder',
-    role: 'Merchandise Management',
+    company: 'Upwork',
+    person: 'Geoffrey Wise',
+    role: 'Social Media Campaign',
     quote:
-      'Creatif Core made our brand feel premium and purposeful. From the first direction to the final rollout, the visuals matched the confidence we wanted people to feel.',
-    tags: ['Brand', 'Website'],
+      'The CreatifCore team is excellent — creative, professional, and always fast with delivery. Their work consistently exceeded expectations, and communication was smooth and reliable. I’m very grateful for everything they contributed and highly recommend them.',
+    tags: ['Social', 'Design'],
   },
   {
-    company: 'Northline',
-    person: 'Ada E., Creative Lead',
-    role: 'Studio Leadership',
+    company: 'Upwork',
+    person: 'Alvaro Anspach',
+    role: 'Social Media Posts',
     quote:
-      'They translated a loose idea into a system we could actually use. The work did not just look good, it made the business easier to explain and easier to sell.',
-    tags: ['Identity', 'UX'],
+      'Worked with the CreatifCore team on 9 social media posts. Could not recommend more. Strong design sense and they created beautiful on-brand posts without a lot of guidance. They move quickly, communicate well, and stay professional. Feedback was incorporated fast and we wrapped in two days. Highly recommend.',
+    tags: ['Social', 'Brand'],
   },
   {
-    company: 'Pulse Summit',
-    person: 'Dami O., Marketing Director',
-    role: 'Campaign Lead',
+    company: 'Upwork',
+    person: 'Success Oyekan',
+    role: 'UI/UX Project',
     quote:
-      'The turnaround was fast, but nothing felt rushed. The assets were consistent, clear, and strong enough to hold attention across every touchpoint.',
-    tags: ['Motion', 'Campaign'],
+      'I have hired the CreatifCore team on more than three graphic design projects, and each time the outcome was remarkable. When I engaged them for my UI/UX project, the results exceeded all expectations. The level of excellence achieved was simply unparalleled.',
+    tags: ['UI/UX', 'Product'],
+  },
+  {
+    company: 'Upwork',
+    person: 'Kody Lukens',
+    role: 'Kickstarter Campaign',
+    quote:
+      'The CreatifCore team is excellent. Their graphics took our Kickstarter campaign to the next level. Wouldn’t hesitate to hire them again.',
+    tags: ['Campaign', 'Graphics'],
+  },
+  {
+    company: 'Upwork',
+    person: 'Saumitra Purohit',
+    role: 'Brand Design',
+    quote:
+      'The CreatifCore team was an absolute delight to work with. Great design sensibilities and attention to detail. They got the job done on time and were open to suggestions. Will definitely work with them again.',
+    tags: ['Brand', 'Design'],
   },
 ];
 

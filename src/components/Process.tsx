@@ -7,6 +7,7 @@ type ProcessStep = {
   title: string;
   description: string;
   imageSrc: string;
+  imageClassName?: string;
 };
 
 type ProcessProps = {
@@ -46,15 +47,11 @@ function Process({ steps }: ProcessProps) {
               <span className="grid h-11 w-11 place-items-center rounded-full border border-white/12 text-[13px] font-bold tracking-[0.12em] text-white">
                 {step.number}
               </span>
-              <div className="mt-4 w-full">
-                <div className="overflow-hidden rounded-[14px] border border-white/8 bg-[#171717]">
-                  <img
-                    src={step.imageSrc}
-                    alt={`${step.title} preview`}
-                    className="h-[150px] w-full object-cover object-center"
-                  />
-                </div>
-              </div>
+              <img
+                src={step.imageSrc}
+                alt={`${step.title} preview`}
+                className={`mt-4 w-full rounded-[14px] object-center ${step.imageClassName ?? 'h-[150px] object-cover'}`}
+              />
               <h3 className="mt-4 text-[18px] font-semibold tracking-[-0.04em] text-white">{step.title}</h3>
               <p className="mt-2 max-w-[240px] text-[12px] leading-5 text-cc-muted">{step.description}</p>
             </motion.article>
