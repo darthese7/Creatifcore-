@@ -192,7 +192,7 @@ const processSteps = [
     title: 'We start delivering',
     description: 'We move fast and shape the design into launch-ready assets and interfaces.',
     imageSrc: process03Src,
-    imageClassName: 'h-auto object-contain',
+    imageClassName: 'object-contain',
   },
 ];
 

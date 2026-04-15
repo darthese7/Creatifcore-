@@ -50,7 +50,7 @@ function Process({ steps }: ProcessProps) {
               <img
                 src={step.imageSrc}
                 alt={`${step.title} preview`}
-                className={`mt-4 w-full rounded-[14px] object-center ${step.imageClassName ?? 'h-[150px] object-cover'}`}
+                className={`mt-4 h-[150px] w-full rounded-[14px] object-center ${step.imageClassName ?? 'object-cover'}`}
               />
               <h3 className="mt-4 text-[18px] font-semibold tracking-[-0.04em] text-white">{step.title}</h3>
               <p className="mt-2 max-w-[240px] text-[12px] leading-5 text-cc-muted">{step.description}</p>
